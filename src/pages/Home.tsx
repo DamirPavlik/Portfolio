@@ -10,7 +10,10 @@ const Home = () => {
             Front End Web Developer / UI UX Designer
           </p>
           <p className="text-sm text-gray">
-            Transforming Visions into Engaging Digital Experiences
+            {/* Transforming Visions into Engaging Digital Experiences */}
+            Create engaging experiences that awaken{" "}
+            <br className="lg:block hidden " />
+            people in the post-print era.
           </p>
         </div>
         <p className="text-sm text-gray">

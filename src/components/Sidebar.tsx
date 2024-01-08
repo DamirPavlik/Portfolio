@@ -17,7 +17,7 @@ const Sidebar = () => {
         </Link>
       )}
       <p className="font-montserrat text-base lg:-rotate-90 text-center lg:inline-block text-brown">
-        © 2023
+        © {new Date().getFullYear()}
       </p>
     </div>
   );

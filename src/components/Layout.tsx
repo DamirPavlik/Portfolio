@@ -4,7 +4,8 @@ import { Sidebar } from ".";
 const Layout = () => {
   return (
     <div className="bg-beige">
-      <div className="grid grid-cols-12 mx-5 lg:mx-[50px] items-center">
+      {/* items-center */}
+      <div className="grid grid-cols-12 mx-5 lg:mx-[50px] ">
         <div className="col-span-12 lg:col-span-1">
           <Sidebar />
         </div>
