@@ -8,6 +8,7 @@ export default {
       brown: "#3A2D27",
       gray: "#756C68",
       blueish: "#E4DED9",
+      silver: "#89817D",
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
