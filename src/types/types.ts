@@ -16,3 +16,17 @@ export type UseFormHook = [
     FormValues,
     (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
 ];
+
+export interface ExperienceTabsContentProps {
+    activeTab: number;
+}
+
+export interface HeadingProps {
+    headingText: string;
+    fontSize: string;
+}
+
+export interface ExperienceTabsProps {
+    activeTab: number;
+    handleTabClick: (tabNumber: number) => void;
+}
