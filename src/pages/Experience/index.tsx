@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { ExperienceTabs, ExperienceTabsContent, Heading } from "../components";
+import { Heading } from "../../components";
+import ExperienceTabsContent from "./ExperienceTabsContent";
+import ExperienceTabs from "./ExperienceTabs";
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState<number>(1);

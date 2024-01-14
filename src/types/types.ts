@@ -24,9 +24,14 @@ export interface ExperienceTabsContentProps {
 export interface HeadingProps {
     headingText: string;
     fontSize: string;
+    zIndex?: string;
 }
 
 export interface ExperienceTabsProps {
     activeTab: number;
     handleTabClick: (tabNumber: number) => void;
+}
+
+export interface SubheadingProps {
+    text: string;
 }

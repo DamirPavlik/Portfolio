@@ -1,5 +1,5 @@
-import { Button } from ".";
-import { useForm } from "../hooks/useForm";
+import { Button } from "../../components";
+import { useForm } from "../../hooks/useForm";
 
 const Form = () => {
   const [values, handleValues] = useForm({

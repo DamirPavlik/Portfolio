@@ -1,5 +1,5 @@
 import { ReactSVG } from "react-svg";
-import { ExperienceTabsContentProps } from "../types/types";
+import { ExperienceTabsContentProps } from "../../types/types";
 
 const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
   activeTab,
@@ -12,7 +12,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
         </h4>
         <p className="text-silver text-sm">Jun 2023 - Present</p>
         <ul className="lg:mt-8 lg:ml-16">
-          <li className="flex text-gray lg:mb-8">
+          <li className="flex text-gray text-base lg:mb-8">
             <ReactSVG src="triangle.svg" className="mr-4 mt-1" />I have been
             actively engaged in front-end development, specializing in
             JavaScript. <br className="lg:block hidden" />
@@ -21,7 +21,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
             primary focus has been on product launches and the development of
             JavaScript-based applications.
           </li>
-          <li className="flex text-gray">
+          <li className="flex text-gray text-base">
             <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
             This experience has been instrumental in deepening my understanding
             of web technologies, particularly in the realms of PHP and
@@ -37,7 +37,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
           </h4>
           <p className="text-silver text-sm">UI/UX Design & Development</p>
           <ul className="lg:mt-8 lg:ml-16">
-            <li className="flex text-gray lg:mb-8">
+            <li className="flex text-gray text-base lg:mb-8">
               <ReactSVG src="triangle.svg" className="mr-4 mt-1" />I have been
               actively engaged in front-end development, specializing in
               JavaScript. <br className="lg:block hidden" />
@@ -46,7 +46,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
               primary focus has been on product launches and the development of
               JavaScript-based applications.
             </li>
-            <li className="flex text-gray">
+            <li className="flex text-gray text-base">
               <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
               This experience has been instrumental in deepening my
               understanding of web technologies, particularly in the realms of

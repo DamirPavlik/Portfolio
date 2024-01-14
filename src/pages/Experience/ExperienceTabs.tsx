@@ -1,4 +1,4 @@
-import { ExperienceTabsProps } from "../types/types";
+import { ExperienceTabsProps } from "../../types/types";
 
 const ExperienceTabs: React.FC<ExperienceTabsProps> = ({
   activeTab,

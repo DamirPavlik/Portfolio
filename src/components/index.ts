@@ -1,19 +1,13 @@
-import Layout from "./Layout";
-import Navigation from "./Navigation";
-import Button from "./Button";
-import Form from "./Form";
-import Sidebar from "./Sidebar";
-import ExperienceTabs from "./ExperienceTabs";
-import ExperienceTabsContent from "./ExperienceTabsContent";
-import Heading from "./Heading";
+import Layout from "./layout/Layout";
+import Button from "./ui/Button";
+import Sidebar from "./layout/Sidebar";
+import Heading from "./ui/Heading";
+import Subheading from "./ui/Subheading";
 
 export  {
     Layout,
-    Navigation,
     Button,
-    Form,
     Sidebar,
-    ExperienceTabs,
-    ExperienceTabsContent,
-    Heading
+    Heading,
+    Subheading,
 }
