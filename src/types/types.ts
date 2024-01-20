@@ -50,3 +50,7 @@ export interface FormProps {
 }
 
 export type ErrorsObject = Record<string, string>
+
+export interface FormErrorMessageProps {
+    message: string
+}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "../../components";
+import { Button, FormErrorMessage } from "../../components";
 import { useForm } from "../../hooks/useForm";
 import {
   EmailJSApiResolve,
@@ -94,9 +94,7 @@ const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
             className="block w-full bg-blueish drop-shadow-lg p-[14px] rounded-[7px] placeholder:text-[14px] outline-none"
           />
           {errorsObject.fullName && (
-            <div className="text-[#c62727] font-medium mt-2">
-              {errorsObject.fullName}
-            </div>
+            <FormErrorMessage message={errorsObject.fullName} />
           )}
         </div>
         <div className="col-span-12 lg:col-span-6">
@@ -109,9 +107,7 @@ const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
             className="block w-full bg-blueish drop-shadow-lg p-[14px] rounded-[7px] placeholder:text-[14px] outline-none"
           />
           {errorsObject.email && (
-            <div className="text-[#c62727] font-medium mt-2">
-              {errorsObject.email}
-            </div>
+            <FormErrorMessage message={errorsObject.email} />
           )}
         </div>
       </div>
@@ -124,9 +120,7 @@ const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
         className="block w-full  bg-blueish drop-shadow-lg p-[14px] rounded-[7px] placeholder:text-[14px] outline-none"
       />
       {errorsObject.subject && (
-        <div className="text-[#c62727] font-medium mt-2">
-          {errorsObject.subject}
-        </div>
+        <FormErrorMessage message={errorsObject.subject} />
       )}
 
       <textarea
@@ -138,11 +132,7 @@ const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
         onChange={handleValues}
         className="block w-full bg-blueish drop-shadow-lg p-[14px] rounded-[7px] placeholder:text-[14px] mt-4 lg:mt-5 outline-none"
       ></textarea>
-      {errorsObject.body && (
-        <div className="text-[#c62727] font-medium mt-2">
-          {errorsObject.body}
-        </div>
-      )}
+      {errorsObject.body && <FormErrorMessage message={errorsObject.body} />}
       <div className="mt-4 lg:mt-5">
         <Button buttonText="Send" align="text-right" />
       </div>
