@@ -6,8 +6,8 @@ const About = () => {
     <div className="pt-12 pb-8 lg:pb-24 lg:pt-5 ">
       <Heading
         headingText="Get To Know Me"
-        fontSize="text-[19vw] lg:text-[11vw]"
-        zIndex="z-10"
+        fontSize="text-[15vw] lg:text-[11vw]"
+        additionalStyles="z-10 lg:leading-[150%] leading-none"
       />
       <div className="grid grid-cols-12">
         <div className="col-span-12 lg:col-span-5">
@@ -27,7 +27,7 @@ const About = () => {
               excitement for me, and I actively seek and incorporate feedback
               from experienced colleagues to continually enhance my proficiency.
             </p>
-            <p className="text-base text-gray lg:mb-8 mb-4">
+            <p className="text-base text-gray mb-8">
               My journey of continual improvement is a testament to my
               dedication to personal and professional development.
             </p>
@@ -57,7 +57,7 @@ const About = () => {
               times and consistently delivers on promises, then we are indeed
               the right fit.{" "}
             </p>
-            <p className="text-base text-gray lg:mb-8 mb-4">
+            <p className="text-base text-gray mb-8">
               Your satisfaction is not just a goal but a commitment, and I am
               here to ensure the success of your endeavors. If this aligns with
               your vision, please feel free to leave me a message, and let's
@@ -73,12 +73,12 @@ const About = () => {
 
           <div>
             <Subheading text="Skills" />
-            <p className="text-base text-gray -mb-1">
+            <p className="text-base text-gray ">
               Some of the technologies I’ve used:
             </p>
             <p className="text-base text-gray">
-              React, JavaScript, TypeScript, PHP, WordPress, Sass, Bootstrap,
-              TailwindCSS, Git
+              React, JavaScript, TypeScript, PHP, MySQL, WordPress, Sass,
+              Bootstrap, TailwindCSS, Git, Figma, Photoshop
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@ const About = () => {
           <img
             src="/aboutPicture.jpg"
             alt=""
-            className="block mx-auto -mt-36 z-0"
+            className="block mx-auto lg:-mt-36 z-0 lg:static absolute lg:w-auto w-[23%] lg:right-0 right-[6%] lg:top-0 top-[12%]"
           />
         </div>
       </div>

@@ -24,7 +24,7 @@ export interface ExperienceTabsContentProps {
 export interface HeadingProps {
     headingText: string;
     fontSize: string;
-    zIndex?: string;
+    additionalStyles?: string;
 }
 
 export interface ExperienceTabsProps {
