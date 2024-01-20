@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react";
+import { ChangeEvent, SetStateAction } from "react";
 
 export interface ButtonProps {
     buttonText: string,
@@ -35,3 +35,18 @@ export interface ExperienceTabsProps {
 export interface SubheadingProps {
     text: string;
 }
+
+export interface EmailJSApiResolve {
+    status: number,
+    text: string
+}
+
+export interface FormErrors {
+    [key: string]: string
+}
+
+export interface FormProps {
+    setEmailSendingMessage: React.Dispatch<SetStateAction<string>>
+}
+
+export type ErrorsObject = Record<string, string>
