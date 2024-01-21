@@ -15,17 +15,3 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
-.nav-item {
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-}
-
-.nav-item:hover {
-    -webkit-transform: skewX(-10deg);
-    -moz-transform: skewX(-10deg);
-    -o-transform: skewX(-10deg);
-    transform: skewX(-10deg);
-}
