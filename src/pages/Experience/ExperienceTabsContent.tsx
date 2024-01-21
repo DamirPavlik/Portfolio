@@ -10,9 +10,9 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
         <h4 className="text-xl text-brown mb-0 font-semibold">
           Front End Engineer — OmniStreak Digital Solutions
         </h4>
-        <p className="text-silver text-sm">Jun 2023 - Present</p>
+        <p className="text-silver text-sm lg:mb-0 mb-4">Jun 2023 - Present</p>
         <ul className="lg:mt-8 lg:ml-16">
-          <li className="flex text-gray text-base lg:mb-8">
+          <li className="flex text-gray lg:text-base text-sm lg:mb-8 mb-5">
             <ReactSVG src="triangle.svg" className="mr-4 mt-1" />I have been
             actively engaged in front-end development, specializing in
             JavaScript. <br className="lg:block hidden" />
@@ -21,7 +21,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
             primary focus has been on product launches and the development of
             JavaScript-based applications.
           </li>
-          <li className="flex text-gray text-base">
+          <li className="flex text-gray lg:text-base text-sm">
             <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
             This experience has been instrumental in deepening my understanding
             of web technologies, particularly in the realms of PHP and
@@ -36,8 +36,8 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
             Crveno Vino Restaurant
           </h4>
           <p className="text-silver text-sm">UI/UX Design & Development</p>
-          <ul className="lg:mt-8 lg:ml-16">
-            <li className="flex text-gray text-base lg:mb-8">
+          <ul className="lg:mt-8 mt-4 lg:ml-16">
+            <li className="flex text-gray lg:text-base text-sm lg:mb-8 mb-5">
               <ReactSVG src="triangle.svg" className="mr-4 mt-1" />I have been
               actively engaged in front-end development, specializing in
               JavaScript. <br className="lg:block hidden" />
@@ -46,16 +46,13 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
               primary focus has been on product launches and the development of
               JavaScript-based applications.
             </li>
-            <li className="flex text-gray text-base">
+            <li className="flex text-gray lg:text-base text-sm">
               <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
-              This experience has been instrumental in deepening my
-              understanding of web technologies, particularly in the realms of
-              PHP and JavaScript. I am proud to have secured this position at
-              the age of 18, a testament to my dedication and proficiency in the
-              field.
+              Technologies used: <br />
+              HTML, CSS, JavaScript, Bootstrap, Figma
             </li>
           </ul>
-          <div className="flex lg:ml-[88px] lg:mt-6">
+          <div className="flex lg:ml-[88px] ml-6 lg:mt-6 mt-5 lg:mb-0 mb-8">
             <a
               href="https://github.com/DamirPavlik/crvenovino.rs"
               target="_blank"
@@ -72,8 +69,8 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
             Gimnazija “Mihajlo Pupin” Kovacica
           </h4>
           <p className="text-silver text-sm">UI/UX Design & Development</p>
-          <ul className="lg:mt-8 lg:ml-16">
-            <li className="flex text-gray lg:mb-8">
+          <ul className="lg:mt-8 mt-4 lg:ml-16">
+            <li className="flex text-gray lg:mb-8 mb-5">
               <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
               The gymnasium in Kovacica already had a website, but they needed a
               fresh new look. I provided a design in Figma and once they
@@ -84,10 +81,10 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
             <li className="flex  text-gray">
               <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
               Technologies used: <br />
-              PHP, WordPress, jQuery, JavaScript, Sass, Bootstrap
+              PHP, WordPress, jQuery, JavaScript, Sass, Bootstrap, Figma
             </li>
           </ul>
-          <div className="flex lg:ml-[88px] lg:mt-6">
+          <div className="flex lg:ml-[88px] ml-6 lg:mt-6 mt-5">
             <a
               href="https://github.com/DamirPavlik/gymko.edu.rs"
               target="_blank"

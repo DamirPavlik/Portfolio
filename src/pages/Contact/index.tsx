@@ -28,13 +28,13 @@ const Contact = () => {
       <div className="grid grid-cols-12">
         <div className="col-span-12 lg:col-span-5 mb-10 lg:mb-0 ">
           <Subheading text="Get in touch" />
-          <p className="text-base text-gray mb-3">
+          <p className="lg:text-base text-sm text-gray mb-3">
             Send me a brief message and I will respond to you promptly.
           </p>
-          <p className="text-base text-gray">
+          <p className="lg:text-base text-sm text-gray">
             Email: <u>damir.pavlik@gmail.com</u>
           </p>
-          <p className="text-base text-gray">
+          <p className="lg:text-base text-sm text-gray">
             On the internet:{" "}
             <a href="#" className="text-gray underline">
               LinkedIn
