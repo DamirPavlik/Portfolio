@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Button } from "../../components";
 import { useForm } from "../../hooks/useForm";
 import { ErrorsObject, FormErrors, FormProps } from "../../types/types";
-import { sendEmail } from "../../utils/sendEmail";
 import FormErrorMessage from "./FormErrorMessage";
-import { isValidEmail } from "../../utils/isValidEmail";
-import { checkFieldLength } from "../../utils/checkFieldLength";
+import { checkFieldLength, sendEmail, isValidEmail } from "../../utils/";
+import { LoadingContext } from "../../components/layout/Layout";
+import { motion } from "framer-motion";
 
 const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
   const [values, handleValues] = useForm({
@@ -37,11 +37,21 @@ const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
     }
   };
 
+  const loading = useContext(LoadingContext);
+
   return (
     <form onSubmit={(e) => handleSubmit(e)} method="POST">
       <div className="grid grid-cols-12 mb-4 lg:mb-5">
         <div className="col-span-12 lg:col-span-6 mb-4 lg:mb-0 lg:mr-5">
-          <input
+          <motion.input
+            initial={{ y: 20, opacity: 0 }}
+            animate={loading === 100 ? { y: 0, opacity: 1 } : undefined}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 15,
+              delay: 0.3,
+            }}
             type="text"
             name="fullName"
             placeholder="Full Name"
@@ -54,7 +64,15 @@ const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
           )}
         </div>
         <div className="col-span-12 lg:col-span-6">
-          <input
+          <motion.input
+            initial={{ y: 20, opacity: 0 }}
+            animate={loading === 100 ? { y: 0, opacity: 1 } : undefined}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 15,
+              delay: 0.3,
+            }}
             type="text"
             name="email"
             placeholder="Email"
@@ -67,7 +85,15 @@ const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
           )}
         </div>
       </div>
-      <input
+      <motion.input
+        initial={{ y: 20, opacity: 0 }}
+        animate={loading === 100 ? { y: 0, opacity: 1 } : undefined}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 15,
+          delay: 0.4,
+        }}
         type="text"
         name="subject"
         placeholder="Subject"
@@ -79,7 +105,15 @@ const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
         <FormErrorMessage message={errorsObject.subject} />
       )}
 
-      <textarea
+      <motion.textarea
+        initial={{ y: 20, opacity: 0 }}
+        animate={loading === 100 ? { y: 0, opacity: 1 } : undefined}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 15,
+          delay: 0.5,
+        }}
         cols={30}
         rows={10}
         placeholder="Body"
@@ -87,11 +121,21 @@ const Form: React.FC<FormProps> = ({ setEmailSendingMessage }) => {
         value={values.body}
         onChange={handleValues}
         className="block w-full bg-blueish drop-shadow-lg p-[14px] rounded-[7px] placeholder:text-[14px] mt-4 lg:mt-5 outline-none"
-      ></textarea>
+      ></motion.textarea>
       {errorsObject.body && <FormErrorMessage message={errorsObject.body} />}
-      <div className="mt-4 lg:mt-5">
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={loading === 100 ? { y: 0, opacity: 1 } : undefined}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 15,
+          delay: 0.6,
+        }}
+        className="mt-4 lg:mt-5"
+      >
         <Button buttonText="Send" align="text-right" />
-      </div>
+      </motion.div>
     </form>
   );
 };

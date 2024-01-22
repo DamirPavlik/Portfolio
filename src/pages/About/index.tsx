@@ -12,7 +12,7 @@ const About = () => {
     <div className="pt-12 pb-8 lg:pb-24 lg:pt-5 ">
       <Heading
         headingText="Get To Know Me"
-        fontSize="text-[15vw] lg:text-[11vw]"
+        fontSize="text-[16vw] lg:text-[11vw]"
         additionalStyles="z-10 lg:leading-[150%] leading-none"
       />
       <div className="grid grid-cols-12">

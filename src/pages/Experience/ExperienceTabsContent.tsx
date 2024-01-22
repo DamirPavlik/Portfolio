@@ -1,12 +1,27 @@
 import { ReactSVG } from "react-svg";
 import { ExperienceTabsContentProps } from "../../types/types";
+import { motion } from "framer-motion";
+import { useContext } from "react";
+import { LoadingContext } from "../../components/layout/Layout";
 
 const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
   activeTab,
 }) => {
+  const loading = useContext(LoadingContext);
   return (
     <div className="lg:col-span-8 col-span-12">
-      <div className={`${activeTab === 1 ? "" : "hidden"} lg:ml-16`}>
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={
+          loading === 100 && activeTab === 1 ? { y: 0, opacity: 1 } : undefined
+        }
+        transition={{
+          duration: 0.8,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className={`${activeTab === 1 ? "" : "hidden"} lg:ml-16`}
+      >
         <h4 className="text-xl text-brown mb-0 font-semibold">
           Front End Engineer — OmniStreak Digital Solutions
         </h4>
@@ -29,8 +44,20 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
             18, a testament to my dedication and proficiency in the field.
           </li>
         </ul>
-      </div>
-      <div className={`${activeTab === 2 ? "" : "hidden"} lg:ml-16`}>
+      </motion.div>
+
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={
+          loading === 100 && activeTab === 2 ? { y: 0, opacity: 1 } : undefined
+        }
+        transition={{
+          duration: 0.8,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className={`${activeTab === 2 ? "" : "hidden"} lg:ml-16`}
+      >
         <div className="lg:mb-16">
           <h4 className="text-xl text-brown mb-0 font-semibold">
             Crveno Vino Restaurant
@@ -96,7 +123,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Heading, Subheading } from "../../components";
 import Form from "./Form";
+import { motion } from "framer-motion";
+import { LoadingContext } from "../../components/layout/Layout";
 
 const Contact = () => {
   const [emailSendingMessage, setEmailSendingMessage] = useState<string>("");
@@ -8,6 +10,8 @@ const Contact = () => {
   const handleCloseEmail = () => {
     setEmailSendingMessage("");
   };
+
+  const loading = useContext(LoadingContext);
 
   return (
     <div className="pt-12 pb-8 lg:pb-0 lg:pt-5 relative">
@@ -26,7 +30,17 @@ const Contact = () => {
       )}
       <Heading headingText="Contact" fontSize="text-[19vw] lg:text-[11vw]" />
       <div className="grid grid-cols-12">
-        <div className="col-span-12 lg:col-span-5 mb-10 lg:mb-0 ">
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={loading === 100 ? { y: 0, opacity: 1 } : undefined}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 0.1,
+          }}
+          className="col-span-12 lg:col-span-5 mb-10 lg:mb-0 "
+        >
           <Subheading text="Get in touch" />
           <p className="lg:text-base text-sm text-gray mb-3">
             Send me a brief message and I will respond to you promptly.
@@ -44,7 +58,7 @@ const Contact = () => {
               GitHub
             </a>
           </p>
-        </div>
+        </motion.div>
         <div className="col-span-12 lg:col-span-6">
           <Form setEmailSendingMessage={setEmailSendingMessage} />
         </div>
