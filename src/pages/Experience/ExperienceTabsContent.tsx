@@ -58,20 +58,18 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
         }}
         className={`${activeTab === 2 ? "" : "hidden"} lg:ml-16`}
       >
-        <div className="lg:mb-16">
+        <div className="lg:mb-16 mb-8">
           <h4 className="text-xl text-brown mb-0 font-semibold">
             Crveno Vino Restaurant
           </h4>
           <p className="text-silver text-sm">UI/UX Design & Development</p>
           <ul className="lg:mt-8 mt-4 lg:ml-16">
             <li className="flex text-gray lg:text-base text-sm lg:mb-8 mb-5">
-              <ReactSVG src="triangle.svg" className="mr-4 mt-1" />I have been
-              actively engaged in front-end development, specializing in
-              JavaScript. <br className="lg:block hidden" />
-              Additionally, I have demonstrated versatility by contributing to
-              PHP and WordPress projects. <br className="lg:block hidden" /> My
-              primary focus has been on product launches and the development of
-              JavaScript-based applications.
+              <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
+              At the age of 17, I designed and developed a website for "Crveno
+              Vino", enabling them to establish an online presence. This project
+              marked my independent initiative, providing the restaurant with a
+              digital platform for better customer interaction.
             </li>
             <li className="flex text-gray lg:text-base text-sm">
               <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
@@ -79,7 +77,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
               HTML, CSS, JavaScript, Bootstrap, Figma
             </li>
           </ul>
-          <div className="flex lg:ml-[88px] ml-6 lg:mt-6 mt-5 lg:mb-0 mb-8">
+          <div className="flex lg:ml-[88px] ml-6 lg:mt-6 mt-5">
             <a
               href="https://github.com/DamirPavlik/crvenovino.rs"
               target="_blank"
@@ -91,13 +89,14 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
             </a>
           </div>
         </div>
-        <div>
+
+        <div className="lg:mb-16 mb-8">
           <h4 className="text-xl text-brown mb-0 font-semibold">
             Gimnazija “Mihajlo Pupin” Kovacica
           </h4>
           <p className="text-silver text-sm">UI/UX Design & Development</p>
           <ul className="lg:mt-8 mt-4 lg:ml-16">
-            <li className="flex text-gray lg:mb-8 mb-5">
+            <li className="flex text-gray lg:text-base text-sm lg:mb-8 mb-5">
               <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
               The gymnasium in Kovacica already had a website, but they needed a
               fresh new look. I provided a design in Figma and once they
@@ -105,7 +104,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
               modern, user-friendly website that accurately represented the
               school's values and mission.
             </li>
-            <li className="flex  text-gray">
+            <li className="flex  text-gray lg:text-base text-sm">
               <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
               Technologies used: <br />
               PHP, WordPress, jQuery, JavaScript, Sass, Bootstrap, Figma
@@ -120,6 +119,36 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
             </a>
             <a href="https://gymko.edu.rs/" target="_blank">
               <img src="/web.png" alt="" className="mr-1 w-8" />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 className="text-xl text-brown mb-0 font-semibold">Budjelar</h4>
+          <p className="text-silver text-sm">UI/UX Design</p>
+          <ul className="lg:mt-8 mt-4 lg:ml-16">
+            <li className="flex text-gray lg:text-base text-sm lg:mb-8 mb-5">
+              <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
+              Employing Figma, I crafted an interface that not only prioritized
+              user experience but also introduced a contemporary visual
+              identity. The redesign focused on intuitive navigation, ensuring
+              users could effortlessly scan receipts, emphasizing clarity and
+              simplicity in every design element. This process marked my
+              commitment to blending form and function, enhancing the app's
+              usability and visual appeal.
+            </li>
+            <li className="flex  text-gray lg:text-base text-sm">
+              <ReactSVG src="triangle.svg" className="mr-4 mt-1" />
+              Technologies used: <br />
+              Figma, Photoshop
+            </li>
+          </ul>
+          <div className="flex lg:ml-[88px] ml-6 lg:mt-6 mt-5">
+            <a
+              href="https://www.figma.com/file/jt12uSPpqZt5pUaQj5FYpp/Budjelar?type=design&node-id=0%3A1&mode=design&t=dgYe2eifWMrN3ecu-1"
+              target="_blank"
+            >
+              <img src="/figma.png" alt="" className="mr-1 w-8" />
             </a>
           </div>
         </div>
