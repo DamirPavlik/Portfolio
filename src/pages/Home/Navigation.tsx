@@ -1,10 +1,25 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LoadingContext } from "../../components/layout/Layout";
 
 const Navigation = () => {
-  const loading = useContext(LoadingContext);
+  const loading = useContext<number>(LoadingContext);
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const isMobile: boolean = windowWidth <= 768;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <motion.div
@@ -19,7 +34,18 @@ const Navigation = () => {
           Experience
         </Link>
       </motion.div>
-      <hr className="bg-brown -mx-5 lg:mx-0" />
+      <motion.hr
+        initial={{ width: 0 }}
+        animate={
+          loading === 100 ? { width: isMobile ? "100vw" : "100%" } : undefined
+        }
+        transition={{
+          duration: 0.8,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="lg:text-brown text-[#333] -mx-5 lg:mx-0"
+      />
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         animate={loading === 100 ? { y: 0, opacity: 1 } : undefined}
@@ -32,7 +58,18 @@ const Navigation = () => {
           About
         </Link>
       </motion.div>
-      <hr className="bg-brown -mx-5 lg:mx-0" />
+      <motion.hr
+        initial={{ width: 0 }}
+        animate={
+          loading === 100 ? { width: isMobile ? "100vw" : "100%" } : undefined
+        }
+        transition={{
+          duration: 0.8,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="lg:text-brown text-[#333]  -mx-5 lg:mx-0 "
+      />
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={loading === 100 ? { y: 0, opacity: 1 } : undefined}

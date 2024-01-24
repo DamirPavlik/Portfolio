@@ -1,5 +1,8 @@
 import { Heading, Subheading } from "../../components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { LoadingContext } from "../../components/layout/Layout";
+import { useContext } from "react";
 
 const About = () => {
   const currentDate = new Date();
@@ -8,15 +11,28 @@ const About = () => {
     (currentDate.getFullYear() - startedDate.getFullYear()) * 12 +
     currentDate.getMonth() -
     startedDate.getMonth();
+  const loading = useContext(LoadingContext);
+
   return (
     <div className="pt-12 pb-8 lg:pb-24 lg:pt-5 ">
       <Heading
         headingText="Get To Know Me"
-        fontSize="text-[16vw] lg:text-[11vw]"
+        fontSize="text-[16vw] lg:text-[10.5vw]"
         additionalStyles="z-10 lg:leading-[150%] leading-none"
       />
       <div className="grid grid-cols-12">
-        <div className="col-span-12 lg:col-span-5">
+        <motion.div
+          initial={{ x: -20, opacity: 0 }}
+          animate={loading === 100 ? { x: 0, opacity: 1 } : undefined}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 0.3,
+            duration: 0.7,
+          }}
+          className="col-span-12 lg:col-span-5"
+        >
           <div className="lg:mb-16 mb-12">
             <Subheading text="Hi there!" />
             <p className="lg:text-base text-sm text-gray mb-3">
@@ -39,7 +55,7 @@ const About = () => {
             </p>
             <a
               href="#"
-              className="bg-brown text-beige rounded-[4px] py-[10px] px-[20px] lg:text-base text-sm"
+              className="bg-gradient-to-r from-brown to-[#2e241f] drop-shadow-lg text-beige rounded-[4px] py-[10px] px-[20px] lg:text-base text-sm"
             >
               Resume
             </a>
@@ -71,7 +87,7 @@ const About = () => {
             </p>
             <Link
               to="/contact"
-              className="bg-brown text-beige rounded-[4px] py-[10px] px-[20px] lg:text-base text-sm"
+              className="bg-gradient-to-r from-brown to-[#2e241f] drop-shadow-lg text-beige rounded-[4px] py-[10px] px-[20px] lg:text-base text-sm"
             >
               Get in touch
             </Link>
@@ -87,9 +103,18 @@ const About = () => {
               Sass, Bootstrap, TailwindCSS, Git, Figma, Photoshop
             </p>
           </div>
-        </div>
+        </motion.div>
         <div className="col-span-12 lg:col-span-6">
-          <img
+          <motion.img
+            initial={{ x: 20, opacity: 0 }}
+            animate={loading === 100 ? { x: 0, opacity: 1 } : undefined}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 15,
+              delay: 0.3,
+              duration: 0.7,
+            }}
             src="/aboutPicture.jpg"
             alt=""
             className="block mx-auto lg:-mt-36 z-0 lg:static absolute lg:w-auto w-[23%] lg:right-0 right-[6%] lg:top-0 top-[12%]"
