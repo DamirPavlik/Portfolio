@@ -4,7 +4,7 @@ import { FormErrors } from "../types/types";
 export const isValidEmail = (email: string, setErrors: React.Dispatch<SetStateAction<FormErrors[]>>) => {
     const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!EMAIL_REGEX.test(email)) {
-      setErrors((prevState: any) => [
+      setErrors((prevState: FormErrors[]) => [
         ...prevState,
         { email: "Email is Invalid" },
       ]);
