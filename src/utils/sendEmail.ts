@@ -11,9 +11,11 @@ export const sendEmail = ({values, setEmailSendingMessage}: {values: FormValues,
       )
       .then(
         (res: EmailJSApiResolve) => {
+          console.log(res);
           setEmailSendingMessage("Email Sent Successfully!");
         },
         (error: EmailJSApiResolve) => {
+          console.log(error)
           setEmailSendingMessage("Email Was Not Sent");
         }
       );
