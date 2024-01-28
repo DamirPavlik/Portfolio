@@ -17,7 +17,7 @@ const About = () => {
     <div className="pt-12 pb-8 lg:pb-24 lg:pt-5 ">
       <Heading
         headingText="Get To Know Me"
-        fontSize="text-[16vw] lg:text-[10.5vw]"
+        fontSize="text-[15vw] lg:text-[10.5vw]"
         additionalStyles="z-10 lg:leading-[150%] leading-none"
       />
       <div className="grid grid-cols-12">
@@ -117,7 +117,7 @@ const About = () => {
             }}
             src="/aboutPicture.jpg"
             alt=""
-            className="block mx-auto lg:-mt-36 z-0 lg:static absolute lg:w-auto w-[23%] lg:right-0 right-[6%] lg:top-0 top-[12%]"
+            className="block mx-auto lg:-mt-36 z-0 lg:static absolute lg:w-auto w-[22%] lg:right-0 right-[6%] lg:top-0 top-[13%]"
           />
         </div>
       </div>

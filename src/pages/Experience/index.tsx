@@ -11,7 +11,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="pt-12 pb-16 lg:pt-5">
+    <div className="pt-12 pb-16 lg:pt-5 min-h-screen md:min-h-0">
       <Heading headingText="Experience" fontSize="text-[17vw] lg:text-[11vw]" />
       <div className="grid grid-cols-12">
         <ExperienceTabs activeTab={activeTab} handleTabClick={handleTabClick} />
