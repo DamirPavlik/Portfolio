@@ -99,8 +99,9 @@ const About = () => {
               Some of the technologies I’ve used:
             </p>
             <p className="lg:text-base text-sm text-gray">
-              React, JavaScript, TypeScript, jQuery, PHP, MySQL, WordPress,
-              Sass, Bootstrap, TailwindCSS, Git, Figma, Photoshop
+              React, JavaScript, TypeScript, Next.js, jQuery, PHP, MySQL,
+              WordPress, Firebase Sass, Bootstrap, TailwindCSS, Git, Figma,
+              Photoshop
             </p>
           </div>
         </motion.div>
