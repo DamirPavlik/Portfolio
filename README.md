@@ -1,1 +1,2 @@
-# Portfolio Project (in progress)
+# Portfolio Project
+Made with React + Typescript
