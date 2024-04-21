@@ -19,7 +19,7 @@ const Hero = () => {
         <h1 className="text-xl font-medium tracking-wider">Damir Pavlik</h1>
         <div className="my-8">
           <p className="lg:text-base text-sm text-gray mb-2">
-            Front End Web Developer / UI UX Designer
+            Front End Web Developer
           </p>
           <p className="lg:text-base text-sm text-gray">
             {/* Transforming Visions into Engaging Digital Experiences */}

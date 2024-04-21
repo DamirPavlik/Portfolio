@@ -23,14 +23,14 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
         className={`${activeTab === 1 ? "" : "hidden"} lg:ml-16`}
       >
         <h4 className="text-xl text-brown mb-0 font-semibold">
-          Front End Engineer — OmniStreak Digital Solutions
+          Front End Web Developer — OmniStreak Digital Solutions
         </h4>
         <p className="text-silver text-sm lg:mb-0 mb-4">Jun 2023 - Present</p>
         <ul className="lg:mt-8 lg:ml-16">
           <li className="flex text-gray lg:text-base text-sm lg:mb-8 mb-5">
             <ReactSVG src="triangle.svg" className="mr-4 mt-1" />I have been
             actively engaged in front-end development, specializing in
-            JavaScript. <br className="lg:block hidden" />
+            JavaScript and React. <br className="lg:block hidden" />
             Additionally, I have demonstrated versatility by contributing to PHP
             and WordPress projects. <br className="lg:block hidden" /> My
             primary focus has been on product launches and the development of
@@ -123,7 +123,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <h4 className="text-xl text-brown mb-0 font-semibold">Budjelar</h4>
           <p className="text-silver text-sm">UI/UX Design</p>
           <ul className="lg:mt-8 mt-4 lg:ml-16">
@@ -151,7 +151,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
               <img src="/figma.png" alt="" className="mr-1 w-8" />
             </a>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </div>
   );
