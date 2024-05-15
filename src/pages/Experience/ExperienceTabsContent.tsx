@@ -23,7 +23,7 @@ const ExperienceTabsContent: React.FC<ExperienceTabsContentProps> = ({
         className={`${activeTab === 1 ? "" : "hidden"} lg:ml-16`}
       >
         <h4 className="text-xl text-brown mb-0 font-semibold">
-          Front End Web Developer — OmniStreak Digital Solutions
+          Web Developer — OmniStreak Digital Solutions
         </h4>
         <p className="text-silver text-sm lg:mb-0 mb-4">Jun 2023 - Present</p>
         <ul className="lg:mt-8 lg:ml-16">
