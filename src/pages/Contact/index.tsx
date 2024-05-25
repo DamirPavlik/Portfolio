@@ -50,11 +50,11 @@ const Contact = () => {
           </p>
           <p className="lg:text-base text-sm text-gray">
             On the internet:{" "}
-            <a href="#" className="text-gray underline">
+            <a href="https://www.linkedin.com/in/damir-pavlik-1374341a6/" target="_blank" className="text-gray underline">
               LinkedIn
             </a>{" "}
             /{" "}
-            <a href="#" className="text-gray underline">
+            <a href="https://github.com/damirpavlik/" target="_blank" className="text-gray underline">
               GitHub
             </a>
           </p>
