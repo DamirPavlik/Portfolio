@@ -29,7 +29,7 @@ const Navigation = () => {
       >
         <Link
           to="/experience"
-          className="text-[15vw] lg:text-[10vw] block font-grandslang text-brown hover:ml-3 transition-all duration-300"
+          className="text-[15vw] lg:text-[10vw] xl:text-[8vw] block font-grandslang text-brown hover:ml-3 transition-all duration-300"
         >
           Experience
         </Link>
@@ -53,7 +53,7 @@ const Navigation = () => {
       >
         <Link
           to="/about"
-          className="text-[15vw] lg:text-[10vw] block font-grandslang text-brown hover:ml-3 transition-all duration-300"
+          className="text-[15vw] lg:text-[10vw] xl:text-[8vw] block font-grandslang text-brown hover:ml-3 transition-all duration-300"
         >
           About
         </Link>
@@ -77,7 +77,7 @@ const Navigation = () => {
       >
         <Link
           to="/contact"
-          className="text-[15vw] lg:text-[10vw] block font-grandslang text-brown hover:ml-3 transition-all duration-300"
+          className="text-[15vw] lg:text-[10vw] xl:text-[8vw] block font-grandslang text-brown hover:ml-3 transition-all duration-300"
         >
           Contact
         </Link>
